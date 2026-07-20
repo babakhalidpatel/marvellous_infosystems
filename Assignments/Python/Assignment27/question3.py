@@ -61,23 +61,23 @@ class Numbers:
                 print("Sum of Factors are :",sum(factorList))
 
 
-    def main():
-        number = int(input("Enter a number :"))
-        NumObj = Numbers(number)
-        isPrime = NumObj.ChkPrime()
-        if isPrime:
-            print("Number is prime :",isPrime)
-        else:
-            print("Number is not a prime :",isPrime)
+def main():
+    number = int(input("Enter a number :"))
+    NumObj = Numbers(number)
+    isPrime = NumObj.ChkPrime()
+    if isPrime:
+        print("Number is prime :",isPrime)
+    else:
+        print("Number is not a prime :",isPrime)
 
 
-        isPerfect = NumObj.ChkPerfect()
-        if isPerfect:
-            print("Number is Perfect :",isPerfect)
-        else:
-            print("Number is not a Perfect :",isPerfect)
-        NumObj.Factors()
-        NumObj.SumFactors()
+    isPerfect = NumObj.ChkPerfect()
+    if isPerfect:
+        print("Number is Perfect :",isPerfect)
+    else:
+        print("Number is not a Perfect :",isPerfect)
+    NumObj.Factors()
+    NumObj.SumFactors()
 
 
 if __name__ == "__main__":
